@@ -25,7 +25,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['34.241.240.156', '54.75.48.237', '34.255.6.160', '34.255.6.85']
+IP_ADDRESS = os.environ.get('IP_ADDRESS', default='')
+#ALLOWED_HOSTS = ['34.241.240.156', '54.75.48.237', '34.255.6.160', '34.255.6.85']
+ALLOWED_HOSTS = [IP_ADDRESS]
 
 
 # Application definition
